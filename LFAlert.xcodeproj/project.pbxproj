@@ -16,6 +16,9 @@
 		9B4D448024E536ED0034DE04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D447F24E536ED0034DE04 /* main.m */; };
 		9B4D448A24E536ED0034DE04 /* LFAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D448924E536ED0034DE04 /* LFAlertTests.m */; };
 		9B4D449524E536EE0034DE04 /* LFAlertUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D449424E536EE0034DE04 /* LFAlertUITests.m */; };
+		9B4D44A824E537840034DE04 /* LFAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D44A724E537840034DE04 /* LFAlertManager.m */; };
+		9B4D44AB24E54A1B0034DE04 /* UIView+LFAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D44AA24E54A1B0034DE04 /* UIView+LFAlertView.m */; };
+		9B55DC2924E6371700D806FB /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B55DC2824E6371700D806FB /* MenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		9B4D449024E536EE0034DE04 /* LFAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4D449424E536EE0034DE04 /* LFAlertUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFAlertUITests.m; sourceTree = "<group>"; };
 		9B4D449624E536EE0034DE04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B4D44A624E537840034DE04 /* LFAlertManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFAlertManager.h; sourceTree = "<group>"; };
+		9B4D44A724E537840034DE04 /* LFAlertManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFAlertManager.m; sourceTree = "<group>"; };
+		9B4D44A924E54A1B0034DE04 /* UIView+LFAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LFAlertView.h"; sourceTree = "<group>"; };
+		9B4D44AA24E54A1B0034DE04 /* UIView+LFAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LFAlertView.m"; sourceTree = "<group>"; };
+		9B55DC2724E6371700D806FB /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		9B55DC2824E6371700D806FB /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +113,15 @@
 		9B4D446C24E536E90034DE04 /* LFAlert */ = {
 			isa = PBXGroup;
 			children = (
+				9B4D44A224E5370E0034DE04 /* LFAlertTool */,
 				9B4D446D24E536E90034DE04 /* AppDelegate.h */,
 				9B4D446E24E536E90034DE04 /* AppDelegate.m */,
 				9B4D447024E536E90034DE04 /* SceneDelegate.h */,
 				9B4D447124E536E90034DE04 /* SceneDelegate.m */,
 				9B4D447324E536E90034DE04 /* ViewController.h */,
 				9B4D447424E536E90034DE04 /* ViewController.m */,
+				9B55DC2724E6371700D806FB /* MenuView.h */,
+				9B55DC2824E6371700D806FB /* MenuView.m */,
 				9B4D447624E536E90034DE04 /* Main.storyboard */,
 				9B4D447924E536ED0034DE04 /* Assets.xcassets */,
 				9B4D447B24E536ED0034DE04 /* LaunchScreen.storyboard */,
@@ -135,6 +147,17 @@
 				9B4D449624E536EE0034DE04 /* Info.plist */,
 			);
 			path = LFAlertUITests;
+			sourceTree = "<group>";
+		};
+		9B4D44A224E5370E0034DE04 /* LFAlertTool */ = {
+			isa = PBXGroup;
+			children = (
+				9B4D44A624E537840034DE04 /* LFAlertManager.h */,
+				9B4D44A724E537840034DE04 /* LFAlertManager.m */,
+				9B4D44A924E54A1B0034DE04 /* UIView+LFAlertView.h */,
+				9B4D44AA24E54A1B0034DE04 /* UIView+LFAlertView.m */,
+			);
+			path = LFAlertTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,8 +292,11 @@
 			files = (
 				9B4D447524E536E90034DE04 /* ViewController.m in Sources */,
 				9B4D446F24E536E90034DE04 /* AppDelegate.m in Sources */,
+				9B4D44A824E537840034DE04 /* LFAlertManager.m in Sources */,
 				9B4D448024E536ED0034DE04 /* main.m in Sources */,
+				9B4D44AB24E54A1B0034DE04 /* UIView+LFAlertView.m in Sources */,
 				9B4D447224E536E90034DE04 /* SceneDelegate.m in Sources */,
+				9B55DC2924E6371700D806FB /* MenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LFAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LFAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
